@@ -1,0 +1,248 @@
+/*
+
+Colors:
+Text: white
+Yellow: #C5952B;
+White: #FFF
+
+*/
+
+/* RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* MAIN */
+
+body {
+  background: linear-gradient(217deg, #ffffff, #f6f2ff, #f2ffff, #fffff5);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 13s ease infinite;
+  -moz-animation: AnimationName 13s ease infinite;
+  animation: AnimationName 13s ease infinite;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  background-image: url("group 1.png");
+  background-position: center;
+  height: 600px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.image-ct {
+  max-width: 15%;
+  max-height: 100%;
+  margin-left: 100px;
+}
+
+img {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-icons-ct {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.icon-container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 32px;
+}
+.icon {
+  color: #5d5178;
+  background-color: white;
+  padding: 24px;
+  margin: 10px;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 10%;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 52% 0%;
+  }
+  50% {
+    background-position: 49% 100%;
+  }
+  100% {
+    background-position: 52% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 52% 0%;
+  }
+  50% {
+    background-position: 49% 100%;
+  }
+  100% {
+    background-position: 52% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 52% 0%;
+  }
+  50% {
+    background-position: 49% 100%;
+  }
+  100% {
+    background-position: 52% 0%;
+  }
+}
+
+/* H1 Animation */
+
+h1 {
+  font-size: 50px;
+  font-weight: 400;
+  padding: 20px;
+  font-family: "Playfair Display", serif;
+  transform: translateY(-600px);
+  animation: 1.2s slideIn ease-in-out forwards 1s;
+  z-index: 10;
+  opacity: 0;
+  justify-content: center;
+}
+
+h1::before {
+  content: "";
+  width: 0%;
+  height: 50px;
+  background-color: var(--secondary-color);
+  justify-content: center;
+  align-items: center;
+  animation: 1s underline ease-in-out forwards 2s;
+  mix-blend-mode: screen;
+}
+
+@keyframes slideIn {
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* The Box */
+button {
+  padding: 12px 28px;
+  display: inline-block;
+  border: none;
+  font-weight: 300;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 8.04533px;
+  text-align: center;
+  transition: all 0.2s;
+  margin-top: 32px;
+}
+/* The text */
+button {
+  color: white;
+  background-color: #c5952b;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+/* The Hover */
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #5d5176; /* Dark Purple */
+  color: white;
+}
+
+/* MAIN */
+.projects {
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  min-width: 200px;
+  max-height: 300px;
+  color: white;
+}
+
+.image-project {
+  display: flex;
+  flex-wrap: wrap;
+  object-fit: cover;
+}
+
+.ontrack-ct {
+  padding: 20px;
+  background: #2f1c41;
+  margin-left: 80px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.vinted-ct {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #09b1ba;
+  margin-left: 80px;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 80px;
+}
+
+.editorial-ct {
+  padding: 20px;
+  background: #807799;
+  margin-left: 80px;
+  align-items: center;
+  border-radius: 20px;
+}
